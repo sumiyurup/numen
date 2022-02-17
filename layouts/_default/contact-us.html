@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-secondory" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-7 pt-5 pt-lg-0 d-flex flex-column justify-content-center"
+          >
+            <h1 data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+              reprehenderit doloribus. Omnis ab voluptates eos libero maiores
+              esse quo tempore delectus quis, optio neque fugit.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="800">
+              <a href="/" class="btn-get-started">Book free consultation</a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-5 hero-img"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <img
+              src="/assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="info-box">
+                    <i class="bx bx-map"></i>
+                    <h3>Our Address</h3>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@example.com<br />contact@example.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- ======= green call to action======= -->
+      <section id="cta-green" class="cta-green section-bg">
+        <div
+          class="container green-bg d-flex justify-content-center align-items-center"
+          data-aos="fade-up"
+        >
+          <div class="row">
+            <div
+              class="col cta-content justify-content-center align-items-center"
+            >
+              <h1 class="h2">Lorem ipsum dolor sit amet,</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                <br />
+                veniam, ad magnam maiores quod quos.
+              </p>
+              <a href=""><img src="/assets/img/app-logo.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End green call to action-->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    <!-- ======= back-to-top ======= -->
+    {{ partial "back_to_top.html" . }}
+    <!-- End back-to-top -->
+
+    <!-- ======= script ======= -->
+    {{ partial "script.html" . }}
+    <!-- script -->
+  </body>
+</html>
